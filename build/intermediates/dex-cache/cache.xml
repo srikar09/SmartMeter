@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="/Users/tanyajojy/Downloads/android-ocr-master/OCRTest/libs/json_simple-1.1.jar"
+        jumboMode="false"
+        revision="24.0.2"
+        sha1="5e303a03d04e6788dddfa3655272580ae0fc13bb">
+        <dex dex="/Users/tanyajojy/Downloads/android-ocr-master/OCRTest/build/intermediates/pre-dexed/debug/json_simple-1.1_9131406a9f782cc01e710ac5bfb6dbc5755b1cb0.jar" />
+    </item>
+    <item
+        jar="/Users/tanyajojy/Downloads/android-ocr-master/OCRTest/libs/google-api-translate-java-0.98-mod2.jar"
+        jumboMode="false"
+        revision="24.0.2"
+        sha1="2eda6905f8b719be023772e5c738d93c6b77210b">
+        <dex dex="/Users/tanyajojy/Downloads/android-ocr-master/OCRTest/build/intermediates/pre-dexed/debug/google-api-translate-java-0.98-mod2_19443f30e913acd609e13ce8f62bb9e1e8b8b91a.jar" />
+    </item>
+    <item
+        jar="/Users/tanyajojy/Downloads/android-ocr-master/OCRTest/libs/microsoft-translator-java-api-0.6-mod.jar"
+        jumboMode="false"
+        revision="24.0.2"
+        sha1="176df3274c901602fe2b6c345326a6990be557b9">
+        <dex dex="/Users/tanyajojy/Downloads/android-ocr-master/OCRTest/build/intermediates/pre-dexed/debug/microsoft-translator-java-api-0.6-mod_cc54f0682815ae2f7e6dce33b742510422723030.jar" />
+    </item>
+    <item
+        jar="/Users/tanyajojy/Downloads/android-ocr-master/OCRTest/build/intermediates/exploded-aar/com.rmtheis/tess-two/6.0.4/jars/classes.jar"
+        jumboMode="false"
+        revision="24.0.2"
+        sha1="27377d2be96cab8211f228b424f221f34a0fa5bc">
+        <dex dex="/Users/tanyajojy/Downloads/android-ocr-master/OCRTest/build/intermediates/pre-dexed/debug/com.rmtheis-tess-two-6.0.4_1a0d6c3f1dc0ab651cc5997c8b6a3f6c017142e9.jar" />
+    </item>
+    <item
+        jar="/Users/tanyajojy/Downloads/android-ocr-master/OCRTest/libs/jtar-1.0.4.jar"
+        jumboMode="false"
+        revision="24.0.2"
+        sha1="b6ff62805312c9384c2f4cc21a6367b74fd2bbd7">
+        <dex dex="/Users/tanyajojy/Downloads/android-ocr-master/OCRTest/build/intermediates/pre-dexed/debug/jtar-1.0.4_54632c6e9d0598b729d8f75215c9dde01c4718ea.jar" />
+    </item>
+
+</items>

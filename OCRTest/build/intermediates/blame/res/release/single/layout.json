@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "/Users/tanyajojy/Downloads/android-ocr-master/OCRTest/build/intermediates/res/merged/release/layout/capture.xml",
+        "source": "/Users/tanyajojy/Downloads/android-ocr-master/OCRTest/src/main/res/layout/capture.xml"
+    },
+    {
+        "merged": "/Users/tanyajojy/Downloads/android-ocr-master/OCRTest/build/intermediates/res/merged/release/layout/help.xml",
+        "source": "/Users/tanyajojy/Downloads/android-ocr-master/OCRTest/src/main/res/layout/help.xml"
+    }
+]

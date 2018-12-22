@@ -1,0 +1,4 @@
+#Thu Oct 25 14:25:01 IST 2018
+base.0=/Users/tanyajojy/Downloads/android-ocr-master/OCRTest/build/intermediates/transforms/dexMerger/debug/0
+path.0=classes.dex
+renamed.0=classes.dex
