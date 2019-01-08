@@ -35,8 +35,9 @@ final class DecodeHandler extends Handler {
     beepManager.updatePrefs();
   }
 
+
   @Override
-  public void handleMessage(Message message) {
+  public void handleMessage(Message message) { 
     if (!running) {
       return;
     }
@@ -62,6 +63,7 @@ final class DecodeHandler extends Handler {
     isDecodePending = false;
   }
 
+
   /**
    *  Launch an AsyncTask to perform an OCR decode for single-shot mode.
    *  
@@ -77,21 +79,20 @@ final class DecodeHandler extends Handler {
     new OcrRecognizeAsyncTask(activity, baseApi, data, width, height).execute();
   }
 
+
   /**
-   *  Perform an OCR decode for realtime recognition mode.
-   *  
+   * Perform an OCR decode for realtime recognition mode.
    * @param data Image data
    * @param width Image width
    * @param height Image height
    */
   private void ocrContinuousDecode(byte[] data, int width, int height) {   
     PlanarYUVLuminanceSource source = activity.getCameraManager().buildLuminanceSource(data, width, height);
-    if (source == null) {
+    if(source == null){
       sendContinuousOcrFailMessage();
       return;
     }
     bitmap = source.renderCroppedGreyscaleBitmap();
-
     OcrResult ocrResult = getOcrResult();
     Handler handler = activity.getHandler();
     if (handler == null) {
@@ -119,6 +120,7 @@ final class DecodeHandler extends Handler {
       baseApi.clear();
     }
   }
+
 
   @SuppressWarnings("unused")
 	private OcrResult getOcrResult() {
@@ -181,6 +183,7 @@ final class DecodeHandler extends Handler {
     ocrResult.setRecognitionTimeRequired(timeRequired);
     return ocrResult;
   }
+
   
   private void sendContinuousOcrFailMessage() {
     Handler handler = activity.getHandler();

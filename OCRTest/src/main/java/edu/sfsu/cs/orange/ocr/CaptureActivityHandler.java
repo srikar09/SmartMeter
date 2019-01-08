@@ -18,7 +18,6 @@ import android.widget.Toast;
 final class CaptureActivityHandler extends Handler {
 
   private static final String TAG = CaptureActivityHandler.class.getSimpleName();
-  
   private final CaptureActivity activity;
   private final DecodeThread decodeThread;
   private static State state;
@@ -36,7 +35,6 @@ final class CaptureActivityHandler extends Handler {
   CaptureActivityHandler(CaptureActivity activity, CameraManager cameraManager, boolean isContinuousModeActive) {
     this.activity = activity;
     this.cameraManager = cameraManager;
-
     // Start ourselves capturing previews (and decoding if using continuous recognition mode).
     cameraManager.startPreview();
     
@@ -45,7 +43,6 @@ final class CaptureActivityHandler extends Handler {
     
     if (isContinuousModeActive) {
       state = State.CONTINUOUS;
-
       // Show the shutter and torch buttons
       activity.setButtonVisibility(true);
       

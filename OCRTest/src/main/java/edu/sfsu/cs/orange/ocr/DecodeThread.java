@@ -21,7 +21,7 @@ final class DecodeThread extends Thread {
     handlerInitLatch = new CountDownLatch(1);
   }
 
-  Handler getHandler() {
+  Handler getHandler(){
     try {
       handlerInitLatch.await();
     } catch (InterruptedException ie) {
@@ -37,4 +37,5 @@ final class DecodeThread extends Thread {
     handlerInitLatch.countDown();
     Looper.loop();
   }
+
 }

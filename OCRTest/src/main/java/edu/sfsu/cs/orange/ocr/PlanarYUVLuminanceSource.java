@@ -106,7 +106,7 @@ public final class PlanarYUVLuminanceSource extends LuminanceSource {
                                         false);
   }
 
-  public Bitmap renderCroppedGreyscaleBitmap() {
+  public Bitmap renderCroppedGreyscaleBitmap(){
     int width = getWidth();
     int height = getHeight();
     int[] pixels = new int[width * height];

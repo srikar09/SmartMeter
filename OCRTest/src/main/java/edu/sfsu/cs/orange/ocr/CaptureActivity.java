@@ -43,14 +43,23 @@ import android.view.WindowManager;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
-
 import com.googlecode.tesseract.android.TessBaseAPI;
-
 import edu.sfsu.cs.orange.ocr.camera.CameraManager;
 import edu.sfsu.cs.orange.ocr.camera.ShutterButton;
 import edu.sfsu.cs.orange.ocr.language.LanguageCodeHelper;
 import edu.sfsu.cs.orange.ocr.language.TranslateAsyncTask;
-
+import java.util.Calendar;
+import java.util.Date; 
+import com.google.api.client.googleapis.auth.oauth2.GoogleCredential;
+import com.google.api.client.googleapis.javanet.GoogleNetHttpTransport;
+import com.google.api.client.http.HttpTransport;
+import com.google.api.client.json.JsonFactory;
+import com.google.api.client.json.jackson2.JacksonFactory;
+import com.google.api.services.sheets.v4.Sheets;
+import com.google.api.services.sheets.v4.model.BatchUpdateValuesRequest;
+import com.google.api.services.sheets.v4.model.BatchUpdateValuesResponse;
+import com.google.api.services.sheets.v4.model.ValueRange;
+import java.io.IOException
 /**
  * This activity opens the camera and does the actual scanning on a background thread. It draws a
  * viewfinder to help the user place the text correctly, shows feedback as the image processing
@@ -195,7 +204,6 @@ public final class CaptureActivity extends Activity implements SurfaceHolder.Cal
   @Override
   public void onCreate(Bundle icicle) {
     super.onCreate(icicle);
-    
     checkFirstLaunch();
     
     if (isFirstLaunch) {
@@ -763,7 +771,10 @@ public final class CaptureActivity extends Activity implements SurfaceHolder.Cal
       progressView.setVisibility(View.GONE);
       setProgressBarVisibility(false);
     }
+    client = new AsyncHttpClient(); 
+    sendMessageOCR(ocrResult.getText());
     return true;
+
   }
   
   /**
@@ -806,6 +817,7 @@ public final class CaptureActivity extends Activity implements SurfaceHolder.Cal
       statusViewBottom.setText("OCR: " + sourceLanguageReadable + " - Mean confidence: " + 
           meanConfidence.toString() + " - Time required: " + recognitionTimeRequired + " ms");
     }
+  
   }
   
   /**
@@ -1187,6 +1199,7 @@ public final class CaptureActivity extends Activity implements SurfaceHolder.Cal
     return indeterminateDialog;
   }
   
+  
   /**
    * Displays an error message dialog box to the user on the UI thread.
    * 
@@ -1201,4 +1214,50 @@ public final class CaptureActivity extends Activity implements SurfaceHolder.Cal
 	    .setPositiveButton( "Done", new FinishListener(this))
 	    .show();
   }
+
+  /* create a json file and send it via google docs api 
+    to midterm 1  google docs 
+    API Parameters- 
+    spreadsheet ID : 1LlFjSu9ljWuQwOLTlQJTjr4y70Z5BdIoKCg1DR-yd7A 
+    sheet ID: 1824377012
+  */
+  void sendMessageOCR(String ocrText) {
+    String spreadsheetId = "1LlFjSu9ljWuQwOLTlQJTjr4y70Z5BdIoKCg1DR-yd7A";
+    String androidID = Secure.getString(getContentResolver(), Secure.ANDROID_ID);
+    Date currentTime = Calendar.getInstance().getTime(); 
+    String valueInputOption = NULL;  /// need actual data 
+    Sheets current_sheet = createSheetsService();
+    BatchUpdateValuesRequest requestBody = new BatchUpdateValuesRequest();
+    requestBody.setValueInputOption(valueInputOption);
+    requestBody.setData(ocrText);
+
+
+  }
+
+
+  protected static Sheets createSheetsService() throws IOException, GeneralSecurityException {
+    NetHttpTransport httpTransport = GoogleNetHttpTransport.newTrustedTransport();
+    JsonFactory jsonFactory = JacksonFactory.getDefaultInstance();
+    GoogleCredential credential = getCredentials(httpTransport);
+    return new Sheets.Builder(httpTransport, jsonFactory, credential)
+        .setApplicationName("Google-SheetsSample/0.1")
+        .build();
+  }   
+
+  protected static Credential getCredentials(final NetHttpTransport HTTP_TRANSPORT) throws IOException {
+        // Load client secrets.
+        InputStream in = SheetsQuickstart.class.getResourceAsStream(CREDENTIALS_FILE_PATH);
+        GoogleClientSecrets clientSecrets = GoogleClientSecrets.load(JSON_FACTORY, new InputStreamReader(in));
+
+        // Build flow and trigger user authorization request.
+        GoogleAuthorizationCodeFlow flow = new GoogleAuthorizationCodeFlow.Builder(
+                HTTP_TRANSPORT, JSON_FACTORY, clientSecrets, SCOPES)
+                .setDataStoreFactory(new FileDataStoreFactory(new java.io.File(TOKENS_DIRECTORY_PATH)))
+                .setAccessType("offline")
+                .build();
+        LocalServerReceiver receiver = new LocalServerReceiver.Builder().setPort(8888).build();
+        return new AuthorizationCodeInstalledApp(flow, receiver).authorize("user");
+    }    
+
+
 }
