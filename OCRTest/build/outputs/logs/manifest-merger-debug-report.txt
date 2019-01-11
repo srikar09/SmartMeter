@@ -1,126 +1,131 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /Users/tanyajojy/Downloads/android-ocr-master/OCRTest/src/main/AndroidManifest.xml:19:1-61:12
-INJECTED from /Users/tanyajojy/Downloads/android-ocr-master/OCRTest/src/main/AndroidManifest.xml:19:1-61:12
-INJECTED from /Users/tanyajojy/Downloads/android-ocr-master/OCRTest/src/main/AndroidManifest.xml:19:1-61:12
-INJECTED from /Users/tanyajojy/Downloads/android-ocr-master/OCRTest/src/main/AndroidManifest.xml:19:1-61:12
-MERGED from [com.rmtheis:tess-two:6.0.4] /Users/tanyajojy/.gradle/caches/transforms-1/files-1.1/tess-two-6.0.4.aar/b6f28466ead5d3f7ff4f9bfae414a6d1/AndroidManifest.xml:17:1-26:12
-INJECTED from /Users/tanyajojy/Downloads/android-ocr-master/OCRTest/src/main/AndroidManifest.xml:19:1-61:12
-INJECTED from /Users/tanyajojy/Downloads/android-ocr-master/OCRTest/src/main/AndroidManifest.xml:19:1-61:12
-INJECTED from /Users/tanyajojy/Downloads/android-ocr-master/OCRTest/src/main/AndroidManifest.xml:19:1-61:12
+ADDED from C:\Users\Vijay\StudioProjects\AndroidOCR\OCRTest\src\main\AndroidManifest.xml:19:1-61:12
+INJECTED from C:\Users\Vijay\StudioProjects\AndroidOCR\OCRTest\src\main\AndroidManifest.xml:19:1-61:12
+INJECTED from C:\Users\Vijay\StudioProjects\AndroidOCR\OCRTest\src\main\AndroidManifest.xml:19:1-61:12
+INJECTED from C:\Users\Vijay\StudioProjects\AndroidOCR\OCRTest\src\main\AndroidManifest.xml:19:1-61:12
+MERGED from [com.rmtheis:tess-two:6.0.4] C:\Users\Vijay\.gradle\caches\transforms-1\files-1.1\tess-two-6.0.4.aar\12ff6dd0bdf3bd7d4f881a6d8f8d95b4\AndroidManifest.xml:17:1-26:12
+MERGED from [com.android.volley:volley:1.1.0] C:\Users\Vijay\.gradle\caches\transforms-1\files-1.1\volley-1.1.0.aar\c05c752814cbd12e01339e2fd7deb927\AndroidManifest.xml:2:1-11:12
+INJECTED from C:\Users\Vijay\StudioProjects\AndroidOCR\OCRTest\src\main\AndroidManifest.xml:19:1-61:12
+INJECTED from C:\Users\Vijay\StudioProjects\AndroidOCR\OCRTest\src\main\AndroidManifest.xml:19:1-61:12
+INJECTED from C:\Users\Vijay\StudioProjects\AndroidOCR\OCRTest\src\main\AndroidManifest.xml:19:1-61:12
 	package
-		ADDED from /Users/tanyajojy/Downloads/android-ocr-master/OCRTest/src/main/AndroidManifest.xml:20:11-43
-		INJECTED from /Users/tanyajojy/Downloads/android-ocr-master/OCRTest/src/main/AndroidManifest.xml
-		INJECTED from /Users/tanyajojy/Downloads/android-ocr-master/OCRTest/src/main/AndroidManifest.xml
+		ADDED from C:\Users\Vijay\StudioProjects\AndroidOCR\OCRTest\src\main\AndroidManifest.xml:20:11-43
+		INJECTED from C:\Users\Vijay\StudioProjects\AndroidOCR\OCRTest\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\Vijay\StudioProjects\AndroidOCR\OCRTest\src\main\AndroidManifest.xml
 	android:versionName
-		ADDED from /Users/tanyajojy/Downloads/android-ocr-master/OCRTest/src/main/AndroidManifest.xml:22:11-39
-		INJECTED from /Users/tanyajojy/Downloads/android-ocr-master/OCRTest/src/main/AndroidManifest.xml
-		INJECTED from /Users/tanyajojy/Downloads/android-ocr-master/OCRTest/src/main/AndroidManifest.xml
+		ADDED from C:\Users\Vijay\StudioProjects\AndroidOCR\OCRTest\src\main\AndroidManifest.xml:22:11-39
+		INJECTED from C:\Users\Vijay\StudioProjects\AndroidOCR\OCRTest\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\Vijay\StudioProjects\AndroidOCR\OCRTest\src\main\AndroidManifest.xml
 	xmlns:android
-		ADDED from /Users/tanyajojy/Downloads/android-ocr-master/OCRTest/src/main/AndroidManifest.xml:19:11-69
+		ADDED from C:\Users\Vijay\StudioProjects\AndroidOCR\OCRTest\src\main\AndroidManifest.xml:19:11-69
 	android:versionCode
-		ADDED from /Users/tanyajojy/Downloads/android-ocr-master/OCRTest/src/main/AndroidManifest.xml:23:11-35
-		INJECTED from /Users/tanyajojy/Downloads/android-ocr-master/OCRTest/src/main/AndroidManifest.xml
-		INJECTED from /Users/tanyajojy/Downloads/android-ocr-master/OCRTest/src/main/AndroidManifest.xml
+		ADDED from C:\Users\Vijay\StudioProjects\AndroidOCR\OCRTest\src\main\AndroidManifest.xml:23:11-35
+		INJECTED from C:\Users\Vijay\StudioProjects\AndroidOCR\OCRTest\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\Vijay\StudioProjects\AndroidOCR\OCRTest\src\main\AndroidManifest.xml
 	android:installLocation
-		ADDED from /Users/tanyajojy/Downloads/android-ocr-master/OCRTest/src/main/AndroidManifest.xml:21:11-51
+		ADDED from C:\Users\Vijay\StudioProjects\AndroidOCR\OCRTest\src\main\AndroidManifest.xml:21:11-51
 uses-sdk
-ADDED from /Users/tanyajojy/Downloads/android-ocr-master/OCRTest/src/main/AndroidManifest.xml:25:3-44
-INJECTED from /Users/tanyajojy/Downloads/android-ocr-master/OCRTest/src/main/AndroidManifest.xml:25:3-44
-MERGED from [com.rmtheis:tess-two:6.0.4] /Users/tanyajojy/.gradle/caches/transforms-1/files-1.1/tess-two-6.0.4.aar/b6f28466ead5d3f7ff4f9bfae414a6d1/AndroidManifest.xml:22:5-24:41
-MERGED from [com.rmtheis:tess-two:6.0.4] /Users/tanyajojy/.gradle/caches/transforms-1/files-1.1/tess-two-6.0.4.aar/b6f28466ead5d3f7ff4f9bfae414a6d1/AndroidManifest.xml:22:5-24:41
-INJECTED from /Users/tanyajojy/Downloads/android-ocr-master/OCRTest/src/main/AndroidManifest.xml:25:3-44
+ADDED from C:\Users\Vijay\StudioProjects\AndroidOCR\OCRTest\src\main\AndroidManifest.xml:25:3-44
+INJECTED from C:\Users\Vijay\StudioProjects\AndroidOCR\OCRTest\src\main\AndroidManifest.xml:25:3-44
+MERGED from [com.rmtheis:tess-two:6.0.4] C:\Users\Vijay\.gradle\caches\transforms-1\files-1.1\tess-two-6.0.4.aar\12ff6dd0bdf3bd7d4f881a6d8f8d95b4\AndroidManifest.xml:22:5-24:41
+MERGED from [com.rmtheis:tess-two:6.0.4] C:\Users\Vijay\.gradle\caches\transforms-1\files-1.1\tess-two-6.0.4.aar\12ff6dd0bdf3bd7d4f881a6d8f8d95b4\AndroidManifest.xml:22:5-24:41
+MERGED from [com.android.volley:volley:1.1.0] C:\Users\Vijay\.gradle\caches\transforms-1\files-1.1\volley-1.1.0.aar\c05c752814cbd12e01339e2fd7deb927\AndroidManifest.xml:7:5-43
+MERGED from [com.android.volley:volley:1.1.0] C:\Users\Vijay\.gradle\caches\transforms-1\files-1.1\volley-1.1.0.aar\c05c752814cbd12e01339e2fd7deb927\AndroidManifest.xml:7:5-43
+INJECTED from C:\Users\Vijay\StudioProjects\AndroidOCR\OCRTest\src\main\AndroidManifest.xml:25:3-44
 	android:targetSdkVersion
-		ADDED from /Users/tanyajojy/Downloads/android-ocr-master/OCRTest/src/main/AndroidManifest.xml:25:13-42
+		ADDED from C:\Users\Vijay\StudioProjects\AndroidOCR\OCRTest\src\main\AndroidManifest.xml:25:13-42
 	android:minSdkVersion
-		INJECTED from /Users/tanyajojy/Downloads/android-ocr-master/OCRTest/src/main/AndroidManifest.xml
-		ADDED from /Users/tanyajojy/Downloads/android-ocr-master/OCRTest/src/main/AndroidManifest.xml:25:3-44
-		INJECTED from /Users/tanyajojy/Downloads/android-ocr-master/OCRTest/src/main/AndroidManifest.xml
+		INJECTED from C:\Users\Vijay\StudioProjects\AndroidOCR\OCRTest\src\main\AndroidManifest.xml
+		ADDED from C:\Users\Vijay\StudioProjects\AndroidOCR\OCRTest\src\main\AndroidManifest.xml:25:3-44
+		INJECTED from C:\Users\Vijay\StudioProjects\AndroidOCR\OCRTest\src\main\AndroidManifest.xml
 supports-screens
-ADDED from /Users/tanyajojy/Downloads/android-ocr-master/OCRTest/src/main/AndroidManifest.xml:26:3-29:51
+ADDED from C:\Users\Vijay\StudioProjects\AndroidOCR\OCRTest\src\main\AndroidManifest.xml:26:3-29:51
 	android:largeScreens
-		ADDED from /Users/tanyajojy/Downloads/android-ocr-master/OCRTest/src/main/AndroidManifest.xml:27:21-48
+		ADDED from C:\Users\Vijay\StudioProjects\AndroidOCR\OCRTest\src\main\AndroidManifest.xml:27:21-48
 	android:smallScreens
-		ADDED from /Users/tanyajojy/Downloads/android-ocr-master/OCRTest/src/main/AndroidManifest.xml:29:21-48
+		ADDED from C:\Users\Vijay\StudioProjects\AndroidOCR\OCRTest\src\main\AndroidManifest.xml:29:21-48
 	android:normalScreens
-		ADDED from /Users/tanyajojy/Downloads/android-ocr-master/OCRTest/src/main/AndroidManifest.xml:28:21-49
+		ADDED from C:\Users\Vijay\StudioProjects\AndroidOCR\OCRTest\src\main\AndroidManifest.xml:28:21-49
 	android:xlargeScreens
-		ADDED from /Users/tanyajojy/Downloads/android-ocr-master/OCRTest/src/main/AndroidManifest.xml:26:21-49
+		ADDED from C:\Users\Vijay\StudioProjects\AndroidOCR\OCRTest\src\main\AndroidManifest.xml:26:21-49
 uses-feature#android.hardware.camera.autofocus
-ADDED from /Users/tanyajojy/Downloads/android-ocr-master/OCRTest/src/main/AndroidManifest.xml:30:3-68
+ADDED from C:\Users\Vijay\StudioProjects\AndroidOCR\OCRTest\src\main\AndroidManifest.xml:30:3-68
 	android:name
-		ADDED from /Users/tanyajojy/Downloads/android-ocr-master/OCRTest/src/main/AndroidManifest.xml:30:17-65
+		ADDED from C:\Users\Vijay\StudioProjects\AndroidOCR\OCRTest\src\main\AndroidManifest.xml:30:17-65
 uses-feature#android.hardware.camera.flash
-ADDED from /Users/tanyajojy/Downloads/android-ocr-master/OCRTest/src/main/AndroidManifest.xml:31:3-89
+ADDED from C:\Users\Vijay\StudioProjects\AndroidOCR\OCRTest\src\main\AndroidManifest.xml:31:3-89
 	android:required
-		ADDED from /Users/tanyajojy/Downloads/android-ocr-master/OCRTest/src/main/AndroidManifest.xml:31:62-86
+		ADDED from C:\Users\Vijay\StudioProjects\AndroidOCR\OCRTest\src\main\AndroidManifest.xml:31:62-86
 	android:name
-		ADDED from /Users/tanyajojy/Downloads/android-ocr-master/OCRTest/src/main/AndroidManifest.xml:31:17-61
+		ADDED from C:\Users\Vijay\StudioProjects\AndroidOCR\OCRTest\src\main\AndroidManifest.xml:31:17-61
 uses-feature#android.hardware.camera
-ADDED from /Users/tanyajojy/Downloads/android-ocr-master/OCRTest/src/main/AndroidManifest.xml:32:3-57
+ADDED from C:\Users\Vijay\StudioProjects\AndroidOCR\OCRTest\src\main\AndroidManifest.xml:32:3-57
 	android:name
-		ADDED from /Users/tanyajojy/Downloads/android-ocr-master/OCRTest/src/main/AndroidManifest.xml:32:17-55
+		ADDED from C:\Users\Vijay\StudioProjects\AndroidOCR\OCRTest\src\main\AndroidManifest.xml:32:17-55
 uses-feature#android.hardware.screen.landscape
-ADDED from /Users/tanyajojy/Downloads/android-ocr-master/OCRTest/src/main/AndroidManifest.xml:33:3-67
+ADDED from C:\Users\Vijay\StudioProjects\AndroidOCR\OCRTest\src\main\AndroidManifest.xml:33:3-67
 	android:name
-		ADDED from /Users/tanyajojy/Downloads/android-ocr-master/OCRTest/src/main/AndroidManifest.xml:33:17-65
+		ADDED from C:\Users\Vijay\StudioProjects\AndroidOCR\OCRTest\src\main\AndroidManifest.xml:33:17-65
 application
-ADDED from /Users/tanyajojy/Downloads/android-ocr-master/OCRTest/src/main/AndroidManifest.xml:35:3-57:17
+ADDED from C:\Users\Vijay\StudioProjects\AndroidOCR\OCRTest\src\main\AndroidManifest.xml:35:3-57:17
+MERGED from [com.android.volley:volley:1.1.0] C:\Users\Vijay\.gradle\caches\transforms-1\files-1.1\volley-1.1.0.aar\c05c752814cbd12e01339e2fd7deb927\AndroidManifest.xml:9:5-20
+MERGED from [com.android.volley:volley:1.1.0] C:\Users\Vijay\.gradle\caches\transforms-1\files-1.1\volley-1.1.0.aar\c05c752814cbd12e01339e2fd7deb927\AndroidManifest.xml:9:5-20
 	android:label
-		ADDED from /Users/tanyajojy/Downloads/android-ocr-master/OCRTest/src/main/AndroidManifest.xml:36:16-48
+		ADDED from C:\Users\Vijay\StudioProjects\AndroidOCR\OCRTest\src\main\AndroidManifest.xml:36:16-48
 	android:icon
-		ADDED from /Users/tanyajojy/Downloads/android-ocr-master/OCRTest/src/main/AndroidManifest.xml:35:16-52
+		ADDED from C:\Users\Vijay\StudioProjects\AndroidOCR\OCRTest\src\main\AndroidManifest.xml:35:16-52
 activity#edu.sfsu.cs.orange.ocr.CaptureActivity
-ADDED from /Users/tanyajojy/Downloads/android-ocr-master/OCRTest/src/main/AndroidManifest.xml:37:5-47:18
+ADDED from C:\Users\Vijay\StudioProjects\AndroidOCR\OCRTest\src\main\AndroidManifest.xml:37:5-47:18
 	android:screenOrientation
-		ADDED from /Users/tanyajojy/Downloads/android-ocr-master/OCRTest/src/main/AndroidManifest.xml:38:15-52
+		ADDED from C:\Users\Vijay\StudioProjects\AndroidOCR\OCRTest\src\main\AndroidManifest.xml:38:15-52
 	android:windowSoftInputMode
-		ADDED from /Users/tanyajojy/Downloads/android-ocr-master/OCRTest/src/main/AndroidManifest.xml:41:15-62
+		ADDED from C:\Users\Vijay\StudioProjects\AndroidOCR\OCRTest\src\main\AndroidManifest.xml:41:15-62
 	android:configChanges
-		ADDED from /Users/tanyajojy/Downloads/android-ocr-master/OCRTest/src/main/AndroidManifest.xml:39:15-76
+		ADDED from C:\Users\Vijay\StudioProjects\AndroidOCR\OCRTest\src\main\AndroidManifest.xml:39:15-76
 	android:theme
-		ADDED from /Users/tanyajojy/Downloads/android-ocr-master/OCRTest/src/main/AndroidManifest.xml:40:15-73
+		ADDED from C:\Users\Vijay\StudioProjects\AndroidOCR\OCRTest\src\main\AndroidManifest.xml:40:15-73
 	android:name
-		ADDED from /Users/tanyajojy/Downloads/android-ocr-master/OCRTest/src/main/AndroidManifest.xml:37:15-46
+		ADDED from C:\Users\Vijay\StudioProjects\AndroidOCR\OCRTest\src\main\AndroidManifest.xml:37:15-46
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from /Users/tanyajojy/Downloads/android-ocr-master/OCRTest/src/main/AndroidManifest.xml:43:7-46:23
+ADDED from C:\Users\Vijay\StudioProjects\AndroidOCR\OCRTest\src\main\AndroidManifest.xml:43:7-46:23
 action#android.intent.action.MAIN
-ADDED from /Users/tanyajojy/Downloads/android-ocr-master/OCRTest/src/main/AndroidManifest.xml:44:9-60
+ADDED from C:\Users\Vijay\StudioProjects\AndroidOCR\OCRTest\src\main\AndroidManifest.xml:44:9-60
 	android:name
-		ADDED from /Users/tanyajojy/Downloads/android-ocr-master/OCRTest/src/main/AndroidManifest.xml:44:17-58
+		ADDED from C:\Users\Vijay\StudioProjects\AndroidOCR\OCRTest\src\main\AndroidManifest.xml:44:17-58
 category#android.intent.category.LAUNCHER
-ADDED from /Users/tanyajojy/Downloads/android-ocr-master/OCRTest/src/main/AndroidManifest.xml:45:9-68
+ADDED from C:\Users\Vijay\StudioProjects\AndroidOCR\OCRTest\src\main\AndroidManifest.xml:45:9-68
 	android:name
-		ADDED from /Users/tanyajojy/Downloads/android-ocr-master/OCRTest/src/main/AndroidManifest.xml:45:19-66
+		ADDED from C:\Users\Vijay\StudioProjects\AndroidOCR\OCRTest\src\main\AndroidManifest.xml:45:19-66
 activity#edu.sfsu.cs.orange.ocr.HelpActivity
-ADDED from /Users/tanyajojy/Downloads/android-ocr-master/OCRTest/src/main/AndroidManifest.xml:48:5-54:16
+ADDED from C:\Users\Vijay\StudioProjects\AndroidOCR\OCRTest\src\main\AndroidManifest.xml:48:5-54:16
 	android:screenOrientation
-		ADDED from /Users/tanyajojy/Downloads/android-ocr-master/OCRTest/src/main/AndroidManifest.xml:49:15-47
+		ADDED from C:\Users\Vijay\StudioProjects\AndroidOCR\OCRTest\src\main\AndroidManifest.xml:49:15-47
 	android:name
-		ADDED from /Users/tanyajojy/Downloads/android-ocr-master/OCRTest/src/main/AndroidManifest.xml:48:15-43
+		ADDED from C:\Users\Vijay\StudioProjects\AndroidOCR\OCRTest\src\main\AndroidManifest.xml:48:15-43
 intent-filter#action:name:android.intent.action.VIEW+category:name:android.intent.category.DEFAULT
-ADDED from /Users/tanyajojy/Downloads/android-ocr-master/OCRTest/src/main/AndroidManifest.xml:50:7-53:23
+ADDED from C:\Users\Vijay\StudioProjects\AndroidOCR\OCRTest\src\main\AndroidManifest.xml:50:7-53:23
 action#android.intent.action.VIEW
-ADDED from /Users/tanyajojy/Downloads/android-ocr-master/OCRTest/src/main/AndroidManifest.xml:51:9-60
+ADDED from C:\Users\Vijay\StudioProjects\AndroidOCR\OCRTest\src\main\AndroidManifest.xml:51:9-60
 	android:name
-		ADDED from /Users/tanyajojy/Downloads/android-ocr-master/OCRTest/src/main/AndroidManifest.xml:51:17-58
+		ADDED from C:\Users\Vijay\StudioProjects\AndroidOCR\OCRTest\src\main\AndroidManifest.xml:51:17-58
 category#android.intent.category.DEFAULT
-ADDED from /Users/tanyajojy/Downloads/android-ocr-master/OCRTest/src/main/AndroidManifest.xml:52:9-67
+ADDED from C:\Users\Vijay\StudioProjects\AndroidOCR\OCRTest\src\main\AndroidManifest.xml:52:9-67
 	android:name
-		ADDED from /Users/tanyajojy/Downloads/android-ocr-master/OCRTest/src/main/AndroidManifest.xml:52:19-65
+		ADDED from C:\Users\Vijay\StudioProjects\AndroidOCR\OCRTest\src\main\AndroidManifest.xml:52:19-65
 activity#edu.sfsu.cs.orange.ocr.PreferencesActivity
-ADDED from /Users/tanyajojy/Downloads/android-ocr-master/OCRTest/src/main/AndroidManifest.xml:56:5-53
+ADDED from C:\Users\Vijay\StudioProjects\AndroidOCR\OCRTest\src\main\AndroidManifest.xml:56:5-53
 	android:name
-		ADDED from /Users/tanyajojy/Downloads/android-ocr-master/OCRTest/src/main/AndroidManifest.xml:56:15-50
+		ADDED from C:\Users\Vijay\StudioProjects\AndroidOCR\OCRTest\src\main\AndroidManifest.xml:56:15-50
 uses-permission#android.permission.CAMERA
-ADDED from /Users/tanyajojy/Downloads/android-ocr-master/OCRTest/src/main/AndroidManifest.xml:58:3-62
+ADDED from C:\Users\Vijay\StudioProjects\AndroidOCR\OCRTest\src\main\AndroidManifest.xml:58:3-62
 	android:name
-		ADDED from /Users/tanyajojy/Downloads/android-ocr-master/OCRTest/src/main/AndroidManifest.xml:58:20-60
+		ADDED from C:\Users\Vijay\StudioProjects\AndroidOCR\OCRTest\src\main\AndroidManifest.xml:58:20-60
 uses-permission#android.permission.INTERNET
-ADDED from /Users/tanyajojy/Downloads/android-ocr-master/OCRTest/src/main/AndroidManifest.xml:59:3-64
+ADDED from C:\Users\Vijay\StudioProjects\AndroidOCR\OCRTest\src\main\AndroidManifest.xml:59:3-64
 	android:name
-		ADDED from /Users/tanyajojy/Downloads/android-ocr-master/OCRTest/src/main/AndroidManifest.xml:59:20-62
+		ADDED from C:\Users\Vijay\StudioProjects\AndroidOCR\OCRTest\src\main\AndroidManifest.xml:59:20-62
 uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
-ADDED from /Users/tanyajojy/Downloads/android-ocr-master/OCRTest/src/main/AndroidManifest.xml:60:3-78
+ADDED from C:\Users\Vijay\StudioProjects\AndroidOCR\OCRTest\src\main\AndroidManifest.xml:60:3-78
 	android:name
-		ADDED from /Users/tanyajojy/Downloads/android-ocr-master/OCRTest/src/main/AndroidManifest.xml:60:20-76
+		ADDED from C:\Users\Vijay\StudioProjects\AndroidOCR\OCRTest\src\main\AndroidManifest.xml:60:20-76

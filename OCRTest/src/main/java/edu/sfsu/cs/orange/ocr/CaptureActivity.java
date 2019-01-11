@@ -22,6 +22,7 @@ import android.os.Bundle;
 import android.os.Environment;
 import android.os.Handler;
 import android.preference.PreferenceManager;
+import android.provider.Settings;
 import android.text.ClipboardManager;
 import android.text.SpannableStringBuilder;
 import android.text.style.CharacterStyle;
@@ -43,23 +44,26 @@ import android.view.WindowManager;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import com.android.volley.Request;
+import com.android.volley.RequestQueue;
+import com.android.volley.Response;
+import com.android.volley.VolleyError;
+import com.android.volley.toolbox.StringRequest;
+import com.android.volley.toolbox.Volley;
 import com.googlecode.tesseract.android.TessBaseAPI;
 import edu.sfsu.cs.orange.ocr.camera.CameraManager;
 import edu.sfsu.cs.orange.ocr.camera.ShutterButton;
 import edu.sfsu.cs.orange.ocr.language.LanguageCodeHelper;
 import edu.sfsu.cs.orange.ocr.language.TranslateAsyncTask;
+
+import java.io.InputStream;
+import java.io.InputStreamReader;
+import java.security.GeneralSecurityException;
 import java.util.Calendar;
 import java.util.Date; 
-import com.google.api.client.googleapis.auth.oauth2.GoogleCredential;
-import com.google.api.client.googleapis.javanet.GoogleNetHttpTransport;
-import com.google.api.client.http.HttpTransport;
-import com.google.api.client.json.JsonFactory;
-import com.google.api.client.json.jackson2.JacksonFactory;
-import com.google.api.services.sheets.v4.Sheets;
-import com.google.api.services.sheets.v4.model.BatchUpdateValuesRequest;
-import com.google.api.services.sheets.v4.model.BatchUpdateValuesResponse;
-import com.google.api.services.sheets.v4.model.ValueRange;
-import java.io.IOException
+
+import java.io.IOException;
 /**
  * This activity opens the camera and does the actual scanning on a background thread. It draws a
  * viewfinder to help the user place the text correctly, shows feedback as the image processing
@@ -189,7 +193,8 @@ public final class CaptureActivity extends Activity implements SurfaceHolder.Cal
   private boolean isPaused;
   private static boolean isFirstLaunch; // True if this is the first time the app is being run
 
-  Handler getHandler() {
+
+    Handler getHandler() {
     return handler;
   }
 
@@ -771,9 +776,14 @@ public final class CaptureActivity extends Activity implements SurfaceHolder.Cal
       progressView.setVisibility(View.GONE);
       setProgressBarVisibility(false);
     }
-    client = new AsyncHttpClient(); 
-    sendMessageOCR(ocrResult.getText());
-    return true;
+      try {
+          sendMessageOCR(ocrResult.getText());
+      } catch (IOException e) {
+          e.printStackTrace();
+      } catch (GeneralSecurityException e) {
+          e.printStackTrace();
+      }
+      return true;
 
   }
   
@@ -1221,43 +1231,41 @@ public final class CaptureActivity extends Activity implements SurfaceHolder.Cal
     spreadsheet ID : 1LlFjSu9ljWuQwOLTlQJTjr4y70Z5BdIoKCg1DR-yd7A 
     sheet ID: 1824377012
   */
-  void sendMessageOCR(String ocrText) {
-    String spreadsheetId = "1LlFjSu9ljWuQwOLTlQJTjr4y70Z5BdIoKCg1DR-yd7A";
-    String androidID = Secure.getString(getContentResolver(), Secure.ANDROID_ID);
-    Date currentTime = Calendar.getInstance().getTime(); 
-    String valueInputOption = NULL;  /// need actual data 
-    Sheets current_sheet = createSheetsService();
-    BatchUpdateValuesRequest requestBody = new BatchUpdateValuesRequest();
-    requestBody.setValueInputOption(valueInputOption);
-    requestBody.setData(ocrText);
-
-
+  void sendMessageOCR(String ocrText) throws IOException, GeneralSecurityException {
+    String SpreadsheetURL = "https://docs.google.com/spreadsheets/d/1LlFjSu9ljWuQwOLTlQJTjr4y70Z5BdIoKCg1DR-yd7A/edit?usp=sharing";
+    String uniqueID = Settings.Secure.getString(getContentResolver(), Settings.Secure.ANDROID_ID);
+    String sheet = "'test1"; // is currently hard coded should change it
+    Date timeStamp = Calendar.getInstance().getTime();
+    String status = "test_status";   // currently hardcoded. Should change it in future
+    StringBuilder  workingString = new StringBuilder(SpreadsheetURL);
+    workingString.append(sheet);
+    workingString.append("&timestamp=");
+    workingString.append( timeStamp.toString());
+    workingString.append("&value=");
+    workingString.append(ocrText);
+    workingString.append("ID=");
+    workingString.append("uniqueID");
+    workingString.append("&status");
+    workingString.append(status);
+    String final_URL = workingString.toString();
+    sendRequest(final_URL);
   }
-
-
-  protected static Sheets createSheetsService() throws IOException, GeneralSecurityException {
-    NetHttpTransport httpTransport = GoogleNetHttpTransport.newTrustedTransport();
-    JsonFactory jsonFactory = JacksonFactory.getDefaultInstance();
-    GoogleCredential credential = getCredentials(httpTransport);
-    return new Sheets.Builder(httpTransport, jsonFactory, credential)
-        .setApplicationName("Google-SheetsSample/0.1")
-        .build();
-  }   
-
-  protected static Credential getCredentials(final NetHttpTransport HTTP_TRANSPORT) throws IOException {
-        // Load client secrets.
-        InputStream in = SheetsQuickstart.class.getResourceAsStream(CREDENTIALS_FILE_PATH);
-        GoogleClientSecrets clientSecrets = GoogleClientSecrets.load(JSON_FACTORY, new InputStreamReader(in));
-
-        // Build flow and trigger user authorization request.
-        GoogleAuthorizationCodeFlow flow = new GoogleAuthorizationCodeFlow.Builder(
-                HTTP_TRANSPORT, JSON_FACTORY, clientSecrets, SCOPES)
-                .setDataStoreFactory(new FileDataStoreFactory(new java.io.File(TOKENS_DIRECTORY_PATH)))
-                .setAccessType("offline")
-                .build();
-        LocalServerReceiver receiver = new LocalServerReceiver.Builder().setPort(8888).build();
-        return new AuthorizationCodeInstalledApp(flow, receiver).authorize("user");
-    }    
-
-
+  void sendRequest(String url){
+    RequestQueue queue = Volley.newRequestQueue(this);
+    StringRequest stringRequest = new StringRequest(Request.Method.GET, url,
+            new Response.Listener<String>() {
+                @Override
+                public void onResponse(String response) {
+                    // Display the first 500 characters of the response string.
+                   // mTextView.setText("Response is: "+ response.substring(0,500));
+                }
+            },
+            new Response.ErrorListener() {
+                @Override
+                public void onErrorResponse(VolleyError error) {
+                    //  mTextView.setText("That didn't work!");
+                }
+            }   );
+    queue.add(stringRequest);
+  }
 }

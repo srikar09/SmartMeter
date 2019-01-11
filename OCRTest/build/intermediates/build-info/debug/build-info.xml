@@ -6,105 +6,171 @@
     density="420dpi"
     format="10"
     plugin-version="3.2.1"
-    timestamp="1540567282365"
+    timestamp="1547234911991"
     token="6642811649866892259"
     verifier="FULL_BUILD_REQUESTED" >
 
     <task
         name="javac"
-        duration="0" />
+        duration="5988" />
     <task
         name="instant-run-dex"
         duration="0" />
     <task
         name="instant-run-transform"
-        duration="0" />
+        duration="1584" />
     <task
         name="verifier"
-        duration="0" />
+        duration="716" />
 
     <artifact
-        location="/Users/tanyajojy/Downloads/android-ocr-master/OCRTest/build/intermediates/instant-run-apk/debug/OCRTest-debug.apk"
+        location="C:\Users\Vijay\StudioProjects\AndroidOCR\OCRTest\build\intermediates\resources\instant-run\debug\resources-debug.apk"
+        type="SPLIT" />
+    <artifact
+        location="C:\Users\Vijay\StudioProjects\AndroidOCR\OCRTest\build\intermediates\split-apk\debug\dep\dependencies.apk"
+        type="SPLIT" />
+    <artifact
+        location="C:\Users\Vijay\StudioProjects\AndroidOCR\OCRTest\build\intermediates\split-apk\debug\slices\slice_0.apk"
+        type="SPLIT" />
+    <artifact
+        location="C:\Users\Vijay\StudioProjects\AndroidOCR\OCRTest\build\intermediates\split-apk\debug\slices\slice_2.apk"
+        type="SPLIT" />
+    <artifact
+        location="C:\Users\Vijay\StudioProjects\AndroidOCR\OCRTest\build\intermediates\split-apk\debug\slices\slice_1.apk"
+        type="SPLIT" />
+    <artifact
+        location="C:\Users\Vijay\StudioProjects\AndroidOCR\OCRTest\build\intermediates\split-apk\debug\slices\slice_3.apk"
+        type="SPLIT" />
+    <artifact
+        location="C:\Users\Vijay\StudioProjects\AndroidOCR\OCRTest\build\intermediates\split-apk\debug\slices\slice_4.apk"
+        type="SPLIT" />
+    <artifact
+        location="C:\Users\Vijay\StudioProjects\AndroidOCR\OCRTest\build\intermediates\split-apk\debug\slices\slice_5.apk"
+        type="SPLIT" />
+    <artifact
+        location="C:\Users\Vijay\StudioProjects\AndroidOCR\OCRTest\build\intermediates\split-apk\debug\slices\slice_6.apk"
+        type="SPLIT" />
+    <artifact
+        location="C:\Users\Vijay\StudioProjects\AndroidOCR\OCRTest\build\intermediates\split-apk\debug\slices\slice_8.apk"
+        type="SPLIT" />
+    <artifact
+        location="C:\Users\Vijay\StudioProjects\AndroidOCR\OCRTest\build\intermediates\split-apk\debug\slices\slice_9.apk"
+        type="SPLIT" />
+    <artifact
+        location="C:\Users\Vijay\StudioProjects\AndroidOCR\OCRTest\build\intermediates\split-apk\debug\slices\slice_7.apk"
+        type="SPLIT" />
+    <artifact
+        location="C:\Users\Vijay\StudioProjects\AndroidOCR\OCRTest\build\intermediates\instant-run-apk\debug\OCRTest-debug.apk"
         type="SPLIT_MAIN" />
     <artifact
-        location="/Users/tanyajojy/Downloads/android-ocr-master/OCRTest/build/intermediates/split-apk/debug/slices/slice_0.apk"
+        location="C:\Users\tanyajojy\Downloads\android-ocr-master\OCRTest\build\intermediates\split-apk\debug\slices\slice_6.apk"
         type="SPLIT" />
     <artifact
-        location="/Users/tanyajojy/Downloads/android-ocr-master/OCRTest/build/intermediates/split-apk/debug/slices/slice_1.apk"
+        location="C:\Users\tanyajojy\Downloads\android-ocr-master\OCRTest\build\intermediates\split-apk\debug\slices\slice_3.apk"
         type="SPLIT" />
     <artifact
-        location="/Users/tanyajojy/Downloads/android-ocr-master/OCRTest/build/intermediates/split-apk/debug/dep/dependencies.apk"
+        location="C:\Users\tanyajojy\Downloads\android-ocr-master\OCRTest\build\intermediates\split-apk\debug\slices\slice_1.apk"
         type="SPLIT" />
     <artifact
-        location="/Users/tanyajojy/Downloads/android-ocr-master/OCRTest/build/intermediates/split-apk/debug/slices/slice_4.apk"
+        location="C:\Users\tanyajojy\Downloads\android-ocr-master\OCRTest\build\intermediates\split-apk\debug\slices\slice_4.apk"
         type="SPLIT" />
     <artifact
-        location="/Users/tanyajojy/Downloads/android-ocr-master/OCRTest/build/intermediates/split-apk/debug/slices/slice_7.apk"
+        location="C:\Users\tanyajojy\Downloads\android-ocr-master\OCRTest\build\intermediates\split-apk\debug\slices\slice_8.apk"
         type="SPLIT" />
     <artifact
-        location="/Users/tanyajojy/Downloads/android-ocr-master/OCRTest/build/intermediates/split-apk/debug/slices/slice_6.apk"
+        location="C:\Users\tanyajojy\Downloads\android-ocr-master\OCRTest\build\intermediates\split-apk\debug\dep\dependencies.apk"
         type="SPLIT" />
     <artifact
-        location="/Users/tanyajojy/Downloads/android-ocr-master/OCRTest/build/intermediates/split-apk/debug/slices/slice_5.apk"
+        location="C:\Users\tanyajojy\Downloads\android-ocr-master\OCRTest\build\intermediates\split-apk\debug\slices\slice_7.apk"
         type="SPLIT" />
     <artifact
-        location="/Users/tanyajojy/Downloads/android-ocr-master/OCRTest/build/intermediates/split-apk/debug/slices/slice_8.apk"
+        location="C:\Users\tanyajojy\Downloads\android-ocr-master\OCRTest\build\intermediates\split-apk\debug\slices\slice_0.apk"
         type="SPLIT" />
     <artifact
-        location="/Users/tanyajojy/Downloads/android-ocr-master/OCRTest/build/intermediates/split-apk/debug/slices/slice_3.apk"
+        location="C:\Users\tanyajojy\Downloads\android-ocr-master\OCRTest\build\intermediates\split-apk\debug\slices\slice_2.apk"
         type="SPLIT" />
     <artifact
-        location="/Users/tanyajojy/Downloads/android-ocr-master/OCRTest/build/intermediates/resources/instant-run/debug/resources-debug.apk"
+        location="C:\Users\tanyajojy\Downloads\android-ocr-master\OCRTest\build\intermediates\split-apk\debug\slices\slice_5.apk"
         type="SPLIT" />
     <artifact
-        location="/Users/tanyajojy/Downloads/android-ocr-master/OCRTest/build/intermediates/split-apk/debug/slices/slice_2.apk"
-        type="SPLIT" />
-    <artifact
-        location="/Users/tanyajojy/Downloads/android-ocr-master/OCRTest/build/intermediates/split-apk/debug/slices/slice_9.apk"
+        location="C:\Users\tanyajojy\Downloads\android-ocr-master\OCRTest\build\intermediates\split-apk\debug\slices\slice_9.apk"
         type="SPLIT" />
 
     <build
         build-mode="FULL"
-        timestamp="1540567282365"
+        timestamp="1547234911991"
         verifier="FULL_BUILD_REQUESTED" >
         <artifact
-            location="/Users/tanyajojy/Downloads/android-ocr-master/OCRTest/build/intermediates/instant-run-apk/debug/OCRTest-debug.apk"
+            location="C:\Users\Vijay\StudioProjects\AndroidOCR\OCRTest\build\intermediates\resources\instant-run\debug\resources-debug.apk"
+            type="SPLIT" />
+        <artifact
+            location="C:\Users\Vijay\StudioProjects\AndroidOCR\OCRTest\build\intermediates\split-apk\debug\dep\dependencies.apk"
+            type="SPLIT" />
+        <artifact
+            location="C:\Users\Vijay\StudioProjects\AndroidOCR\OCRTest\build\intermediates\split-apk\debug\slices\slice_0.apk"
+            type="SPLIT" />
+        <artifact
+            location="C:\Users\Vijay\StudioProjects\AndroidOCR\OCRTest\build\intermediates\split-apk\debug\slices\slice_2.apk"
+            type="SPLIT" />
+        <artifact
+            location="C:\Users\Vijay\StudioProjects\AndroidOCR\OCRTest\build\intermediates\split-apk\debug\slices\slice_1.apk"
+            type="SPLIT" />
+        <artifact
+            location="C:\Users\Vijay\StudioProjects\AndroidOCR\OCRTest\build\intermediates\split-apk\debug\slices\slice_3.apk"
+            type="SPLIT" />
+        <artifact
+            location="C:\Users\Vijay\StudioProjects\AndroidOCR\OCRTest\build\intermediates\split-apk\debug\slices\slice_4.apk"
+            type="SPLIT" />
+        <artifact
+            location="C:\Users\Vijay\StudioProjects\AndroidOCR\OCRTest\build\intermediates\split-apk\debug\slices\slice_5.apk"
+            type="SPLIT" />
+        <artifact
+            location="C:\Users\Vijay\StudioProjects\AndroidOCR\OCRTest\build\intermediates\split-apk\debug\slices\slice_6.apk"
+            type="SPLIT" />
+        <artifact
+            location="C:\Users\Vijay\StudioProjects\AndroidOCR\OCRTest\build\intermediates\split-apk\debug\slices\slice_8.apk"
+            type="SPLIT" />
+        <artifact
+            location="C:\Users\Vijay\StudioProjects\AndroidOCR\OCRTest\build\intermediates\split-apk\debug\slices\slice_9.apk"
+            type="SPLIT" />
+        <artifact
+            location="C:\Users\Vijay\StudioProjects\AndroidOCR\OCRTest\build\intermediates\split-apk\debug\slices\slice_7.apk"
+            type="SPLIT" />
+        <artifact
+            location="C:\Users\Vijay\StudioProjects\AndroidOCR\OCRTest\build\intermediates\instant-run-apk\debug\OCRTest-debug.apk"
             type="SPLIT_MAIN" />
         <artifact
-            location="/Users/tanyajojy/Downloads/android-ocr-master/OCRTest/build/intermediates/split-apk/debug/slices/slice_0.apk"
+            location="C:\Users\tanyajojy\Downloads\android-ocr-master\OCRTest\build\intermediates\split-apk\debug\slices\slice_6.apk"
             type="SPLIT" />
         <artifact
-            location="/Users/tanyajojy/Downloads/android-ocr-master/OCRTest/build/intermediates/split-apk/debug/slices/slice_1.apk"
+            location="C:\Users\tanyajojy\Downloads\android-ocr-master\OCRTest\build\intermediates\split-apk\debug\slices\slice_3.apk"
             type="SPLIT" />
         <artifact
-            location="/Users/tanyajojy/Downloads/android-ocr-master/OCRTest/build/intermediates/split-apk/debug/dep/dependencies.apk"
+            location="C:\Users\tanyajojy\Downloads\android-ocr-master\OCRTest\build\intermediates\split-apk\debug\slices\slice_1.apk"
             type="SPLIT" />
         <artifact
-            location="/Users/tanyajojy/Downloads/android-ocr-master/OCRTest/build/intermediates/split-apk/debug/slices/slice_4.apk"
+            location="C:\Users\tanyajojy\Downloads\android-ocr-master\OCRTest\build\intermediates\split-apk\debug\slices\slice_4.apk"
             type="SPLIT" />
         <artifact
-            location="/Users/tanyajojy/Downloads/android-ocr-master/OCRTest/build/intermediates/split-apk/debug/slices/slice_7.apk"
+            location="C:\Users\tanyajojy\Downloads\android-ocr-master\OCRTest\build\intermediates\split-apk\debug\slices\slice_8.apk"
             type="SPLIT" />
         <artifact
-            location="/Users/tanyajojy/Downloads/android-ocr-master/OCRTest/build/intermediates/split-apk/debug/slices/slice_6.apk"
+            location="C:\Users\tanyajojy\Downloads\android-ocr-master\OCRTest\build\intermediates\split-apk\debug\dep\dependencies.apk"
             type="SPLIT" />
         <artifact
-            location="/Users/tanyajojy/Downloads/android-ocr-master/OCRTest/build/intermediates/split-apk/debug/slices/slice_5.apk"
+            location="C:\Users\tanyajojy\Downloads\android-ocr-master\OCRTest\build\intermediates\split-apk\debug\slices\slice_7.apk"
             type="SPLIT" />
         <artifact
-            location="/Users/tanyajojy/Downloads/android-ocr-master/OCRTest/build/intermediates/split-apk/debug/slices/slice_8.apk"
+            location="C:\Users\tanyajojy\Downloads\android-ocr-master\OCRTest\build\intermediates\split-apk\debug\slices\slice_0.apk"
             type="SPLIT" />
         <artifact
-            location="/Users/tanyajojy/Downloads/android-ocr-master/OCRTest/build/intermediates/split-apk/debug/slices/slice_3.apk"
+            location="C:\Users\tanyajojy\Downloads\android-ocr-master\OCRTest\build\intermediates\split-apk\debug\slices\slice_2.apk"
             type="SPLIT" />
         <artifact
-            location="/Users/tanyajojy/Downloads/android-ocr-master/OCRTest/build/intermediates/resources/instant-run/debug/resources-debug.apk"
+            location="C:\Users\tanyajojy\Downloads\android-ocr-master\OCRTest\build\intermediates\split-apk\debug\slices\slice_5.apk"
             type="SPLIT" />
         <artifact
-            location="/Users/tanyajojy/Downloads/android-ocr-master/OCRTest/build/intermediates/split-apk/debug/slices/slice_2.apk"
-            type="SPLIT" />
-        <artifact
-            location="/Users/tanyajojy/Downloads/android-ocr-master/OCRTest/build/intermediates/split-apk/debug/slices/slice_9.apk"
+            location="C:\Users\tanyajojy\Downloads\android-ocr-master\OCRTest\build\intermediates\split-apk\debug\slices\slice_9.apk"
             type="SPLIT" />
     </build>
 
