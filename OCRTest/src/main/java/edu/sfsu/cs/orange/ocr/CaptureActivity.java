@@ -1244,11 +1244,11 @@ public final class CaptureActivity extends Activity implements SurfaceHolder.Cal
     workingString.append("&value=");
     workingString.append(ocrText);
     workingString.append("ID=");
-    workingString.append("uniqueID");
+    workingString.append(uniqueID);
     workingString.append("&status");
     workingString.append(status);
     String final_URL = workingString.toString();
-    sendRequest(final_URL);
+    sendRequest("https://script.google.com/macros/s/AKfycbyK9cH6CnWsjdPXCugUXIrHq5XrzRJ0IUQ1CZ2810O0QjBxQwM/exec?sheet=dandam&ID=123&test=200");
   }
   void sendRequest(String url){
     RequestQueue queue = Volley.newRequestQueue(this);
