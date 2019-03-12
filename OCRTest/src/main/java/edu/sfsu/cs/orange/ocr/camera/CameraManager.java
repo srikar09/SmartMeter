@@ -60,8 +60,8 @@ public final class CameraManager {
    */
   public synchronized void openDriver(SurfaceHolder holder) throws IOException {
     Camera theCamera = camera;
-    final Parameters p = theCamera.getParameters();
-    p.setFlashMode(Parameters.FLASH_MODE_TORCH);
+    final Camera.Parameters p = theCamera.getParameters();
+    p.setFlashMode(Camera.Parameters.FLASH_MODE_TORCH);
     theCamera.setParameters(p);
     if (theCamera == null) {
       theCamera = Camera.open();

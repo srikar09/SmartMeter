@@ -6,6 +6,7 @@ import edu.sfsu.cs.orange.ocr.R;
 import edu.sfsu.cs.orange.ocr.camera.CameraManager;
 import edu.sfsu.cs.orange.ocr.OcrResult;
 
+import android.os.CountDownTimer;
 import android.os.Handler;
 import android.os.Message;
 import android.util.Log;
@@ -187,7 +188,18 @@ final class CaptureActivityHandler extends Handler {
    */
   private void ocrDecode() {
     state = State.PREVIEW_PAUSED;
-    cameraManager.requestOcrDecode(decodeThread.getHandler(), R.id.ocr_decode);
+    while(true) {
+      new CountDownTimer(30000, 1000) {
+        @Override
+        public void onTick(long millisUntilFinished) {
+
+        }
+
+        public void onFinish() {
+          cameraManager.requestOcrDecode(decodeThread.getHandler(), R.id.ocr_decode);
+        }
+      }.start();
+    }
   }
   
   /**
