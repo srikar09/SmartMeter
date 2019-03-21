@@ -1,14 +1,14 @@
 -- Merging decision tree log ---
 manifest
-ADDED from C:\Users\Vijay\StudioProjects\SmartMeter_real\OCRTest\src\main\AndroidManifest.xml:19:1-61:12
-INJECTED from C:\Users\Vijay\StudioProjects\SmartMeter_real\OCRTest\src\main\AndroidManifest.xml:19:1-61:12
-INJECTED from C:\Users\Vijay\StudioProjects\SmartMeter_real\OCRTest\src\main\AndroidManifest.xml:19:1-61:12
-INJECTED from C:\Users\Vijay\StudioProjects\SmartMeter_real\OCRTest\src\main\AndroidManifest.xml:19:1-61:12
+ADDED from C:\Users\Vijay\StudioProjects\SmartMeter_real\OCRTest\src\main\AndroidManifest.xml:19:1-62:12
+INJECTED from C:\Users\Vijay\StudioProjects\SmartMeter_real\OCRTest\src\main\AndroidManifest.xml:19:1-62:12
+INJECTED from C:\Users\Vijay\StudioProjects\SmartMeter_real\OCRTest\src\main\AndroidManifest.xml:19:1-62:12
+INJECTED from C:\Users\Vijay\StudioProjects\SmartMeter_real\OCRTest\src\main\AndroidManifest.xml:19:1-62:12
 MERGED from [com.rmtheis:tess-two:6.0.4] C:\Users\Vijay\.gradle\caches\transforms-1\files-1.1\tess-two-6.0.4.aar\12ff6dd0bdf3bd7d4f881a6d8f8d95b4\AndroidManifest.xml:17:1-26:12
 MERGED from [com.android.volley:volley:1.1.0] C:\Users\Vijay\.gradle\caches\transforms-1\files-1.1\volley-1.1.0.aar\c05c752814cbd12e01339e2fd7deb927\AndroidManifest.xml:2:1-11:12
-INJECTED from C:\Users\Vijay\StudioProjects\SmartMeter_real\OCRTest\src\main\AndroidManifest.xml:19:1-61:12
-INJECTED from C:\Users\Vijay\StudioProjects\SmartMeter_real\OCRTest\src\main\AndroidManifest.xml:19:1-61:12
-INJECTED from C:\Users\Vijay\StudioProjects\SmartMeter_real\OCRTest\src\main\AndroidManifest.xml:19:1-61:12
+INJECTED from C:\Users\Vijay\StudioProjects\SmartMeter_real\OCRTest\src\main\AndroidManifest.xml:19:1-62:12
+INJECTED from C:\Users\Vijay\StudioProjects\SmartMeter_real\OCRTest\src\main\AndroidManifest.xml:19:1-62:12
+INJECTED from C:\Users\Vijay\StudioProjects\SmartMeter_real\OCRTest\src\main\AndroidManifest.xml:19:1-62:12
 	package
 		ADDED from C:\Users\Vijay\StudioProjects\SmartMeter_real\OCRTest\src\main\AndroidManifest.xml:20:11-43
 		INJECTED from C:\Users\Vijay\StudioProjects\SmartMeter_real\OCRTest\src\main\AndroidManifest.xml
@@ -118,14 +118,14 @@ ADDED from C:\Users\Vijay\StudioProjects\SmartMeter_real\OCRTest\src\main\Androi
 	android:name
 		ADDED from C:\Users\Vijay\StudioProjects\SmartMeter_real\OCRTest\src\main\AndroidManifest.xml:56:15-50
 uses-permission#android.permission.CAMERA
-ADDED from C:\Users\Vijay\StudioProjects\SmartMeter_real\OCRTest\src\main\AndroidManifest.xml:58:3-62
+ADDED from C:\Users\Vijay\StudioProjects\SmartMeter_real\OCRTest\src\main\AndroidManifest.xml:59:3-62
 	android:name
-		ADDED from C:\Users\Vijay\StudioProjects\SmartMeter_real\OCRTest\src\main\AndroidManifest.xml:58:20-60
+		ADDED from C:\Users\Vijay\StudioProjects\SmartMeter_real\OCRTest\src\main\AndroidManifest.xml:59:20-60
 uses-permission#android.permission.INTERNET
-ADDED from C:\Users\Vijay\StudioProjects\SmartMeter_real\OCRTest\src\main\AndroidManifest.xml:59:3-64
+ADDED from C:\Users\Vijay\StudioProjects\SmartMeter_real\OCRTest\src\main\AndroidManifest.xml:60:3-64
 	android:name
-		ADDED from C:\Users\Vijay\StudioProjects\SmartMeter_real\OCRTest\src\main\AndroidManifest.xml:59:20-62
+		ADDED from C:\Users\Vijay\StudioProjects\SmartMeter_real\OCRTest\src\main\AndroidManifest.xml:60:20-62
 uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
-ADDED from C:\Users\Vijay\StudioProjects\SmartMeter_real\OCRTest\src\main\AndroidManifest.xml:60:3-78
+ADDED from C:\Users\Vijay\StudioProjects\SmartMeter_real\OCRTest\src\main\AndroidManifest.xml:61:3-78
 	android:name
-		ADDED from C:\Users\Vijay\StudioProjects\SmartMeter_real\OCRTest\src\main\AndroidManifest.xml:60:20-76
+		ADDED from C:\Users\Vijay\StudioProjects\SmartMeter_real\OCRTest\src\main\AndroidManifest.xml:61:20-76

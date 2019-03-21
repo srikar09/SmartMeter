@@ -60,17 +60,17 @@ public final class CameraManager {
    */
   public synchronized void openDriver(SurfaceHolder holder) throws IOException {
     Camera theCamera = camera;
-    final Camera.Parameters p = theCamera.getParameters();
-    p.setFlashMode(Camera.Parameters.FLASH_MODE_TORCH);
-    theCamera.setParameters(p);
+
     if (theCamera == null) {
       theCamera = Camera.open();
       if (theCamera == null) {
+
         throw new IOException();
-      }
-      camera = theCamera;
+      }      camera = theCamera;
+
     }
     camera.setPreviewDisplay(holder);
+
     if (!initialized) {
       initialized = true;
       configManager.initFromCameraParameters(theCamera);
@@ -107,6 +107,9 @@ public final class CameraManager {
   public synchronized void startPreview() {
     Camera theCamera = camera;
     if (theCamera != null && !previewing) {
+      final Camera.Parameters p = theCamera.getParameters();
+      p.setFlashMode(Camera.Parameters.FLASH_MODE_TORCH);
+      theCamera.setParameters(p);
       theCamera.startPreview();
       previewing = true;
       autoFocusManager = new AutoFocusManager(context, camera);

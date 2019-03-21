@@ -23,7 +23,7 @@ final class CaptureActivityHandler extends Handler {
   private final DecodeThread decodeThread;
   private static State state;
   private final CameraManager cameraManager;
-
+  private static boolean cameraShutterState ;
   private enum State {
     PREVIEW,
     PREVIEW_PAUSED,
@@ -36,12 +36,12 @@ final class CaptureActivityHandler extends Handler {
   CaptureActivityHandler(CaptureActivity activity, CameraManager cameraManager, boolean isContinuousModeActive) {
     this.activity = activity;
     this.cameraManager = cameraManager;
+    this.cameraShutterState = false;
     // Start ourselves capturing previews (and decoding if using continuous recognition mode).
     cameraManager.startPreview();
-    
     decodeThread = new DecodeThread(activity);
     decodeThread.start();
-    
+
     if (isContinuousModeActive) {
       state = State.CONTINUOUS;
       // Show the shutter and torch buttons
@@ -177,7 +177,7 @@ final class CaptureActivityHandler extends Handler {
   private void restartOcrPreviewAndDecode() {
     // Continue capturing camera frames
     cameraManager.startPreview();
-    
+
     // Continue requesting decode of images
     cameraManager.requestOcrDecode(decodeThread.getHandler(), R.id.ocr_continuous_decode);
     activity.drawViewfinder();    
@@ -188,18 +188,19 @@ final class CaptureActivityHandler extends Handler {
    */
   private void ocrDecode() {
     state = State.PREVIEW_PAUSED;
-    while(true) {
-      new CountDownTimer(30000, 1000) {
+    cameraManager.requestOcrDecode(decodeThread.getHandler(), R.id.ocr_decode);
+      new CountDownTimer(3, 1){
         @Override
         public void onTick(long millisUntilFinished) {
-
+          System.out.print("we got till here");
+          cameraManager.requestOcrDecode(decodeThread.getHandler(), R.id.ocr_decode);
         }
 
         public void onFinish() {
-          cameraManager.requestOcrDecode(decodeThread.getHandler(), R.id.ocr_decode);
+            System.out.print("we got till here - on finish");
+            cameraManager.requestOcrDecode(decodeThread.getHandler(), R.id.ocr_decode);
         }
       }.start();
-    }
   }
   
   /**
@@ -217,7 +218,7 @@ final class CaptureActivityHandler extends Handler {
    */
   void shutterButtonClick() {
     // Disable further clicks on this button until OCR request is finished
-    activity.setShutterButtonClickable(false);
+    this.cameraShutterState =  !(this.cameraShutterState);
     ocrDecode();
   }
 
